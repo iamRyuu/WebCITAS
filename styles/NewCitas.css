@@ -33,12 +33,12 @@ a:visited {
 }
 
 form {
+  margin-top: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  justify-content: space-evenly;
-  height: 100vh;
+  gap: 1rem;
+  height: auto;
   width: 90%;
   max-width: 500px;
 }
