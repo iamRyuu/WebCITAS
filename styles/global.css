@@ -14,14 +14,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh; /* Asegura que el body ocupe al menos la pantalla completa */
+  min-height: 50vh; /* Asegura que el body ocupe al menos la pantalla completa */
+  height: auto;
   width: 100%; /* Asegura que el body se extienda a lo ancho de la ventana */
-
-  position: fixed; /* Fija el header en la parte superior de la ventana del navegador */
-  top: 0; /* Alinea el header en la parte superior de la página */
-  left: 0; /* Alinea el header al lado izquierdo de la página */
   padding: 0px; /* Espacio generoso para respirar */
-  z-index: 1000; /* Asegura que el header siempre esté en la parte superior de otros elementos */
 }
 
 /* Estilos del encabezado, incluyendo ajuste responsivo del logo */
