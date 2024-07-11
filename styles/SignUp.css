@@ -141,7 +141,7 @@ form {
 /* Pantallas grandes */
 @media (min-width: 1024px) {
   form {
-    width: 50%;
+    width: 100%;
     padding: 2rem; /* Agrega más padding para un aspecto más espacioso */
   }
 

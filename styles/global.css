@@ -1,88 +1,83 @@
-html, body {
-  height: 100%; /* Asegura que el html y body ocupen toda la altura de la pantalla */
+/* Establece estilos básicos y la caja de borde para todos los elementos */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column; /* Organiza los elementos en columna */
-  align-items: center;
-  justify-content: center;
-}
-
-body {
-  flex: 1 0 auto; /* Permite que el body crezca para llenar el espacio */
   font-family: "Montserrat", sans-serif;
   background-color: #181818;
+  color: white; /* Asegura que el texto sea legible en el fondo oscuro */
 }
 
-header {
-  background: linear-gradient(45deg, #2E2E2E, 60%, #0A0A0A);
+/* Estilos básicos del cuerpo para asegurar flexibilidad y centrado */
+body {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 80px;
+  min-height: 100vh; /* Asegura que el body ocupe al menos la pantalla completa */
+  width: 100%; /* Asegura que el body se extienda a lo ancho de la ventana */
 }
 
-footer {
-  background-color: #2E2E2E;
+/* Estilos del encabezado, incluyendo ajuste responsivo del logo */
+header {
   width: 100%;
-  height: 75px;
+  padding: 20px 40px; /* Espacio generoso para respirar */
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  margin-top: auto; /* Empuja el footer hacia abajo */
+  background: linear-gradient(45deg, #2E2E2E, 60%, #0A0A0A); /* Mejora en el gradiente de fondo */
 }
 
-footer i {
-  display: inline-block;
-  text-align: center;
-  background: none;
-  color: rgb(133, 133, 133);
+header img {
+  width: auto;
+  max-width: 180px; /* Permite que el logo crezca un poco en pantallas más grandes */
+  height: auto;
 }
 
-footer i a {
-  background: none;
-  margin-top: 2px;
-  display: block;
-  font-size: 18px;
-  text-decoration: none;
+/* Estilos para enlaces, incluidos los visitados y normales */
+a, a:visited {
+  color: white; /* Mejora de la legibilidad y la consistencia de los enlaces */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
 }
 
-a:visited, a:link {
-  color: white;
+/* Estilos generales de formulario para mejorar la accesibilidad y la estética */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 600px; /* Aumenta el máximo para pantallas más grandes */
+  margin: 20px 0; /* Añade un margen superior e inferior */
 }
 
-/* Media Queries para adaptar tamaños */
-
-/* Pantallas más pequeñas que 428px */
-@media (max-width: 427px) {
-  header, footer {
-    height: 60px; /* Menor altura para cabecera y pie de página */
+/* Media Queries para ajustes en diferentes tamaños de pantalla */
+@media (min-width: 768px) {
+  header img {
+    max-width: 200px; /* Incremento moderado del tamaño del logo */
   }
-
-  footer i a {
-    font-size: 16px; /* Tamaño de fuente menor para links en el pie */
-  }
-}
-
-/* Pantallas medianas, como tablets */
-@media (min-width: 428px) and (max-width: 768px) {
-  header, footer {
-    height: 70px; /* Altura intermedia para cabecera y pie */
-  }
-
-  footer i a {
-    font-size: 17px; /* Tamaño de fuente intermedio para links */
+  form {
+    max-width: 700px; /* Permite que los formularios sean más grandes */
   }
 }
 
-/* Pantallas grandes */
-@media (min-width: 769px) {
-  header, footer {
-    height: 100px; /* Altura aumentada para cabecera y pie de página */
+@media (min-width: 1024px) {
+  body {
+    padding: 0 80px; /* Añade padding lateral para no estirar demasiado el contenido */
   }
+  header {
+    padding: 30px 50px; /* Mayor padding en el header para pantallas grandes */
+  }
+  form {
+    max-width: 800px; /* Extiende la anchura máxima del formulario */
+  }
+}
 
-  footer i a {
-    font-size: 20px; /* Tamaño de fuente mayor para mejor legibilidad */
+@media (min-width: 1440px) {
+  header img {
+    max-width: 220px; /* Permite que el logo sea aún más grande */
+  }
+  form {
+    max-width: 900px; /* Extiende aún más la anchura máxima del formulario */
   }
 }
