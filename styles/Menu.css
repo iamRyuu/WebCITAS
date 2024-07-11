@@ -1,0 +1,41 @@
+header{
+  justify-content: flex-start;
+}
+
+header img{
+  width: 100%; /* Ajustable para tamaños de pantalla */
+  max-width: 120px; /* Máximo ancho para mantener la proporción */
+  height: auto; /* Altura auto para mantener la proporción */
+  background: none;
+  margin-left: 10px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 83vh; 
+  width: 100%;
+}
+
+form button{
+  border: 1px solid #1a87a9;
+  border-radius: 4px;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  color: whitesmoke;
+  background-color: #1A87A9;
+  height: 45px;
+  width: 100%; /* Ajustable para tamaños de pantalla */
+  max-width: 300px; /* Máximo ancho para mantener la proporción */
+}
+
+form button i{
+  background: none;
+}
+
+#Menu{
+  color: #1B91B6;
+}

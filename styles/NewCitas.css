@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+
+body {
+  height: 90vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header img {
+  width: 100%; /* Ajustable para tamaños de pantalla */
+  max-width: 120px; /* Máximo ancho para mantener la proporción */
+  height: auto; /* Altura auto para mantener la proporción */
+  background: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+header i {
+  margin-left: 10px;
+  background: none;
+}
+
+header a {
+  background: none;
+}
+
+a:visited {
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+  width: 90%;
+  max-width: 500px;
+}
+
+form select {
+  background-color: #2b2b2b;
+  font-size: 20px;
+  color: whitesmoke;
+  border-radius: 10px;
+  width: 326px;
+  height: 53px;
+}
+
+form textarea {
+  background-color: #4b4b4b;
+  width: 300px;
+  height: 118px;
+  border-radius: 15px;
+  font-size: 16px;
+  padding: 1rem;
+  color: white;
+  field-sizing: content;
+}
+
+form textarea::placeholder {
+  color: rgb(197, 197, 197);
+}
+
+form button {
+  margin-top: 30px;
+  border: 1px solid #1a87a9;
+  border-radius: 4px;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  color: whitesmoke;
+  background-color: #1a87a9;
+  height: 45px;
+  width: 100%; /* Ajustable para tamaños de pantalla */
+  max-width: 180px; /* Máximo ancho para mantener la proporción */
+}
+
+.month {
+  padding: 20px 25px;
+  width: 100%;
+  background: none;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  padding: 10px 0;
+  background-color: none;
+  margin: 0;
+  width: 100%;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+  background-color: none;
+}
+
+.days {
+  padding: 10px 0;
+  background: #2b2b2b;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #777;
+  background: none;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important;
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width: 720px) {
+  .weekdays li,
+  .days li {
+    width: 13.1%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li,
+  .days li {
+    width: 12.5%;
+  }
+  .days li .active {
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li,
+  .days li {
+    width: 12.2%;
+  }
+}

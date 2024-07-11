@@ -1,0 +1,95 @@
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.image_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Asegura que la imagen esté centrada */
+}
+
+.image_logo img {
+  width: 100%; /* Ajustable para tamaños de pantalla */
+  max-width: 322px; /* Máximo ancho para mantener la proporción */
+  height: auto; /* Altura auto para mantener la proporción */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 45px;
+  width: 100%; /* Ajustable para tamaños de pantalla */
+}
+
+.input-container {
+  display: flex;
+  justify-content: center; /* Centra el contenido de input-container */
+  position: relative;
+  width: 100%; /* Ajustable para tamaños de pantalla */
+  max-width: 300px; /* Máximo ancho para mantener el tamaño del input */
+}
+
+.input-container i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #1B91B6;
+  background: none;
+}
+
+.inputs input {
+  border: 1px solid #1B91B6;
+  border-radius: 4px;
+  font-weight: 400;
+  height: 45px;
+  width: 100%;
+  padding-left: 35px; /* Espacio para el ícono */
+  background-color: #2c2c2c;
+}
+
+.inputs input::placeholder {
+  color: #1B91B6;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Ajustable para tamaños de pantalla */
+}
+
+.button button {
+  border: 1px solid #1a87a9;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: whitesmoke;
+  background-color: #1A87A9;
+  height: 45px;
+  width: 100%; /* Ajustable para tamaños de pantalla */
+  max-width: 300px; /* Máximo ancho para mantener la proporción */
+}
+
+.button a{
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.button span {
+  color: #1B91B6;
+  font-weight: 500;
+  font-size: 16px;
+}
