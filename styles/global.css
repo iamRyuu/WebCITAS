@@ -55,6 +55,12 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   margin-top: auto; /* Empuja el footer hacia abajo */
+
+
+  position: fixed; /* Fija el footer en la parte inferior de la ventana del navegador */
+  bottom: 0; /* Alinea el footer en la parte inferior de la página */
+  left: 0; 
+  z-index: 1000;
 }
 
 footer i {
