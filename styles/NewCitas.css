@@ -33,11 +33,11 @@ a:visited {
 }
 
 form {
-  margin-top: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  min-height: 850px;
   height: auto;
   width: 90%;
   max-width: 500px;

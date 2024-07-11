@@ -1,7 +1,3 @@
-body{
-  height: 90vh;
-}
-
 header{
   display: flex;
   justify-content: space-between;
@@ -34,7 +30,8 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 850px;
+  height: auto;
   width: 90%; /* Adaptativo al tamaño del dispositivo */
   max-width: 500px; /* Limita el ancho máximo para grandes pantallas */
 }
