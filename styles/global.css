@@ -1,20 +1,20 @@
-*{
+html, body {
+  height: 100%; /* Asegura que el html y body ocupen toda la altura de la pantalla */
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  background-color: #181818;
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en columna */
+  align-items: center;
+  justify-content: center;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: auto;
+  flex: 1 0 auto; /* Permite que el body crezca para llenar el espacio */
+  font-family: "Montserrat", sans-serif;
+  background-color: #181818;
 }
 
-header{
+header {
   background: linear-gradient(45deg, #2E2E2E, 60%, #0A0A0A);
   display: flex;
   justify-content: center;
@@ -23,23 +23,24 @@ header{
   height: 80px;
 }
 
-footer{
+footer {
   background-color: #2E2E2E;
   width: 100%;
   height: 75px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: auto; /* Empuja el footer hacia abajo */
 }
 
-footer i{
+footer i {
   display: inline-block;
-  text-align:  center;
+  text-align: center;
   background: none;
   color: rgb(133, 133, 133);
 }
 
-footer i a{
+footer i a {
   background: none;
   margin-top: 2px;
   display: block;
@@ -47,10 +48,41 @@ footer i a{
   text-decoration: none;
 }
 
-a:visited{
+a:visited, a:link {
   color: white;
 }
 
-a:link{
-  color: none;
+/* Media Queries para adaptar tamaños */
+
+/* Pantallas más pequeñas que 428px */
+@media (max-width: 427px) {
+  header, footer {
+    height: 60px; /* Menor altura para cabecera y pie de página */
+  }
+
+  footer i a {
+    font-size: 16px; /* Tamaño de fuente menor para links en el pie */
+  }
+}
+
+/* Pantallas medianas, como tablets */
+@media (min-width: 428px) and (max-width: 768px) {
+  header, footer {
+    height: 70px; /* Altura intermedia para cabecera y pie */
+  }
+
+  footer i a {
+    font-size: 17px; /* Tamaño de fuente intermedio para links */
+  }
+}
+
+/* Pantallas grandes */
+@media (min-width: 769px) {
+  header, footer {
+    height: 100px; /* Altura aumentada para cabecera y pie de página */
+  }
+
+  footer i a {
+    font-size: 20px; /* Tamaño de fuente mayor para mejor legibilidad */
+  }
 }
